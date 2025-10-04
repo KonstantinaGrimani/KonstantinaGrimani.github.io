@@ -78,6 +78,13 @@
             overflow: hidden;
             text-overflow: ellipsis;
         }
+        @media (min-width: 400px) and (max-width: 768px) {
+            .small-screen-center {
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+            }
+        }
     </style>
 </head>
 <body class="bg-pattern">
@@ -129,7 +136,7 @@
                     <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight text-white mb-6">
                         Konstantina Grimani <span class="text-gray-400">Graphic Designer</span>
                     </h1>
-                    <p class="text-base md:text-lg text-gray-400 max-w-lg mb-8 md:mb-10">
+                    <p class="text-base md:text-lg text-gray-400 max-w-lg mb-8 md:mb-10 small-screen-center">
                         I'm here to turn the vision inside your head into a reality!
                     </p>
                     <div class="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4 w-full">
