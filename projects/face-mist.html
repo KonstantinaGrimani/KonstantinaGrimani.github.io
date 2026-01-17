@@ -33,6 +33,13 @@
         .no-scroll {
             overflow: hidden;
         }
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none; /* IE and Edge */
+            scrollbar-width: none; /* Firefox */
+        }
 
         .bg-pattern {
             background-image: linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
@@ -151,7 +158,7 @@
         <section id="project-details" class="max-w-7xl mx-auto px-6 md:px-12 py-28 md:py-40">
             <div class="text-center mb-12">
                 <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight text-white mb-12">
-                   Street Burger S.A. (CONCEPT)
+                    Face Mist Campaign (CONCEPT)
                 </h1>
                 <!-- Back button to go to the main page -->
                 <a href="/#projects" class="bg-transparent border border-gray-600 text-white font-semibold py-3 px-8 rounded-full hover:bg-gray-800 transition-colors duration-200">
@@ -160,116 +167,92 @@
             </div>
             <!-- Placeholder for project details content -->
             <div class="space-y-28">
-                    <div>
-                    <img src="../images/685c06a04732ab109fb8e617_MAIN_image_burger_SMALL_1.webp"
-                        alt="Project main image" 
-                        class="w-full rounded-3xl shadow-2xl mb-12">
-
                     <div class="text-center">
                         <h1 class="text-2xl font-semibold text-white mb-1">Description</h1>
                     </div>
-                    <p class="text-gray-400 max-w-2xl mx-auto">
-                        <p>A burger food chain called Street Burger S.A. is in need of a Logo, a Menu and a food tray Leaflet. Emphasizing on "street style", the idea is to design something commonly seen in the streets, like graffiti, magazines in newsstands and of course street signs. All these elements are used in a careful design in order to help Street Burger S.A. thrive!</p>
-                    </p>
+                    <div class="text-gray-400 max-w-2xl mx-auto text-center " >
+                        <p>A collection of social media posts and stories for a face mist campaign. The conceptual brand for this mist is Greek, uses organic and locally sourced ingredients for its products and aims for an honest, yet elegant image.</p>
+                    </div>
 
-                    <img
-                        src="../images/685bc93d2be73bd9d7db5865_STREET_BURGER_BANNER.webp"
-                        alt="Project banner image"
-                        class="max-w-full max-h-full object-contain rounded-xl mt-8"
-                    />
+            </div>
+
+            <div class="flex flex-col w-full max-w-lg mx-auto mt-20 mb-10">
+                <div id="instagram-carousel" class="flex overflow-x-auto snap-x snap-mandatory no-scrollbar gap-4 pb-4 scroll-smooth cursor-grab active:cursor-grabbing select-none">
+                    <div class="flex-none w-full snap-center">
+                        <h2 class="text-sm font-semibold text-gray-500 mb-2 uppercase tracking-tight">POSTS</h2>
+                        <div class="aspect-[4/5] w-full overflow-hidden rounded-xl bg-gray-100 shadow-md">
+                            <img src="../images/facemist_car_1.png"
+                                 alt="Leaflet"
+                                 class="w-full h-full object-cover pointer-events-none">
+                        </div>
+                    </div>
+
+                    <div class="flex-none w-full snap-center">
+                        <h2 class="text-sm font-semibold text-gray-500 mb-2 uppercase tracking-tight">POSTS</h2>
+                        <div class="aspect-[4/5] w-full overflow-hidden rounded-xl bg-gray-100 shadow-md">
+                            <img src="../images/facemist_car_2.png"
+                                 alt="Menu Cover"
+                                 class="w-full h-full object-cover pointer-events-none">
+                        </div>
+                    </div>
+
+                    <div class="flex-none w-full snap-center">
+                        <h2 class="text-sm font-semibold text-gray-500 mb-2 uppercase tracking-tight">POSTS</h2>
+                        <div class="aspect-[4/5] w-full overflow-hidden rounded-xl bg-gray-100 shadow-md">
+                            <img src="../images/facemist_car_3.png"
+                                 alt="Menu Page"
+                                 class="w-full h-full object-cover pointer-events-none">
+                        </div>
+                    </div>
+
+                    <div class="flex-none w-full snap-center">
+                        <h2 class="text-sm font-semibold text-gray-500 mb-2 uppercase tracking-tight">POSTS</h2>
+                        <div class="aspect-[4/5] w-full overflow-hidden rounded-xl bg-gray-100 shadow-md">
+                            <img src="../images/facemist_car_4.png"
+                                 alt="Menu Page"
+                                 class="w-full h-full object-cover pointer-events-none">
+                        </div>
+                    </div>
+
                 </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                                                                                                
-                            <div class="flex flex-col">
-                                <!-- Heading above the image -->
-                                <h2 class="text-lg text-gray-400 leading-relaxed">
-                                   <p>MAIN LOGO</p>
-                                </h2>
+                    <p class="text-xs text-gray-400 mt-2 text-center">Swipe to see more →</p>
+                </div>
 
-                                <img src="../images/1.webp"
-                                    alt="Project Image" 
-                                    class="w-full rounded-2xl shadow-lg">
+                <div class="flex flex-col w-full max-w-lg mx-auto">
+                    <div id="instagram-carousel-2" class="flex overflow-x-auto snap-x snap-mandatory no-scrollbar gap-4 pb-4 scroll-smooth cursor-grab active:cursor-grabbing select-none">
+                        <div class="flex-none w-full snap-center">
+                                    <h2 class="text-sm font-semibold text-gray-500 mb-2 uppercase tracking-tight">STORIES</h2>
+                                    <div class="relative aspect-[9/16] overflow-hidden rounded-2xl shadow-xl">
+                                        <img src="../images/facemist_st_1.png"
+                                             alt="Leaflet"
+                                             class="w-full h-full object-cover pointer-events-none">
+                                    </div>
+                                </div>
+
+                                <div class="flex-none w-full snap-center">
+                                    <h2 class="text-sm font-semibold text-gray-500 mb-2 uppercase tracking-tight">STORIES</h2>
+                                    <div class="relative aspect-[9/16] overflow-hidden rounded-2xl shadow-xl">
+                                        <img src="../images/facemist_st_2.png"
+                                             alt="Leaflet"
+                                             class="w-full h-full object-cover pointer-events-none">
+                                    </div>
+                                </div>
+
+                                <div class="flex-none w-full snap-center">
+                                    <h2 class="text-sm font-semibold text-gray-500 mb-2 uppercase tracking-tight">STORIES</h2>
+                                    <div class="relative aspect-[9/16] overflow-hidden rounded-2xl shadow-xl">
+                                        <img src="../images/facemist_st_3.png"
+                                             alt="Leaflet"
+                                             class="w-full h-full object-cover pointer-events-none">
+                                    </div>
+                                </div>
+
+
                             </div>
-                                                                                                                        
-                            <div class="flex flex-col">
-                                <!-- Heading above the image -->
-                                <h2 class="text-lg text-gray-400 leading-relaxed">
-                                   <p>LEAFLET</p>
-                                </h2>
 
-                                <img src="../images/2.webp"
-                                    alt="Project Image" 
-                                    class="w-full rounded-2xl shadow-lg">
-                            </div>
-                                                                                                                        
-                            <div class="flex flex-col">
-                                <!-- Heading above the image -->
-                                <h2 class="text-lg text-gray-400 leading-relaxed">
-                                   <p>MENU COVER</p>
-                                </h2>
-
-                                <img src="../images/684fcbd71842e934612f685f_2_1.webp"
-                                    alt="Project Image" 
-                                    class="w-full rounded-2xl shadow-lg">
-                            </div>
-                                                                                                                        
-                            <div class="flex flex-col">
-                                <!-- Heading above the image -->
-                                <h2 class="text-lg text-gray-400 leading-relaxed">
-                                   <p>MENU PAGE 1-2</p>
-                                </h2>
-
-                                <img src="../images/4.webp"
-                                    alt="Project Image" 
-                                    class="w-full rounded-2xl shadow-lg">
-                            </div>
-                                                                                                                        
-                            <div class="flex flex-col">
-                                <!-- Heading above the image -->
-                                <h2 class="text-lg text-gray-400 leading-relaxed">
-                                   <p>MENU PAGE 3-4</p>
-                                </h2>
-
-                                <img src="../images/5.webp"
-                                    alt="Project Image" 
-                                    class="w-full rounded-2xl shadow-lg">
-                            </div>
-                                                                                                                        
-                            <div class="flex flex-col">
-                                <!-- Heading above the image -->
-                                <h2 class="text-lg text-gray-400 leading-relaxed">
-                                   <p>MENU PAGE 5-6</p>
-                                </h2>
-
-                                <img src="../images/6.webp"
-                                    alt="Project Image" 
-                                    class="w-full rounded-2xl shadow-lg">
-                            </div>
-                                                                                                                        
-                            <div class="flex flex-col">
-                                <!-- Heading above the image -->
-                                <h2 class="text-lg text-gray-400 leading-relaxed">
-                                   <p>MENU BACK COVER</p>
-                                </h2>
-
-                                <img src="../images/7.webp"
-                                    alt="Project Image" 
-                                    class="w-full rounded-2xl shadow-lg">
-                            </div>
-                                                            </div>
-                <div>
-             <div class="text-center">
-                    <h1 class="text-2xl font-semibold text-white mb-1">Presentation</h1>
-               </div>
-                <img 
-                    src="../images/685bccdd4e283fcd79699416_STREET_BURGER_SLIDE_yes.webp"
-                    alt="Project presentation" 
-                    class="w-full rounded-3xl shadow-2xl mt-0"
-                />
-             </div>
-
-        </div>
+                            <p class="text-xs text-gray-400 mt-2 text-center">Swipe to see more →</p>
+                        </div>
 
         </section>
          <!-- Contact Section -->
@@ -355,6 +338,66 @@
                     behavior: 'smooth'
                 });
             });
+        });
+
+        const slider = document.getElementById('instagram-carousel');
+        let isDown = false;
+        let startX;
+        let scrollLeft;
+
+        slider.addEventListener('mousedown', (e) => {
+            isDown = true;
+            startX = e.pageX - slider.offsetLeft;
+            scrollLeft = slider.scrollLeft;
+            slider.style.scrollSnapType = 'none';
+            slider.style.scrollBehavior = 'auto';
+        });
+
+        slider.addEventListener('mouseleave', () => {
+            isDown = false;
+        });
+
+        slider.addEventListener('mouseup', () => {
+            isDown = false;
+            slider.style.scrollSnapType = 'x mandatory';
+            slider.style.scrollBehavior = 'smooth';
+        });
+
+        slider.addEventListener('mousemove', (e) => {
+            if (!isDown) return;
+            e.preventDefault();
+            const x = e.pageX - slider.offsetLeft;
+            const walk = (x - startX) * 1.5;
+            slider.scrollLeft = scrollLeft - walk;
+        });
+          const slider2 = document.getElementById('instagram-carousel-2');
+
+                    slider2.addEventListener('mousedown', (e) => {
+                    isDown = true;
+                    slider2.classList.add('active');
+                    startX = e.pageX - slider2.offsetLeft;
+                    scrollLeft = slider2.scrollLeft;
+                    slider2.style.scrollSnapType = 'none';
+                    slider2.style.scrollBehavior = 'auto';
+                });
+
+                slider2.addEventListener('mouseleave', () => {
+                    isDown = false;
+                });
+
+            slider2.addEventListener('mouseup', () => {
+                    isDown = false;
+                    slider2.style.scrollSnapType = 'x mandatory';
+                    slider2.style.scrollBehavior = 'smooth';
+                });
+
+            slider2.addEventListener('mousemove', (e) => {
+                    if (!isDown) return;
+                    e.preventDefault();
+                    const x = e.pageX - slider2.offsetLeft;
+                    const walk = (x - startX) * 2;
+                    slider2.scrollLeft = scrollLeft - walk;
+
         });
     </script>
 </body>
